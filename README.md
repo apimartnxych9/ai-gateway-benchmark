@@ -12,7 +12,7 @@
 
 > **from $0.066 per second** at 480P (720P $0.216 · 1080P $0.3849) — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-10-12)*
 
-**[Get an API key](https://go.apimart.ai/k-99a937)** · **[Live pricing](https://go.apimart.ai/k-PENDING-seedance-2.0-api-pricing)** · **[Model page](https://go.apimart.ai/k-PENDING-seedance-2.0-api-model)** · [⚡ 60-second quickstart](#quickstart)
+**[Get an API key](https://go.apimart.ai/k-12bb08)** · **[Live pricing](https://go.apimart.ai/k-7fc243)** · **[Model page](https://go.apimart.ai/k-ea65c1)** · [⚡ 60-second quickstart](#quickstart)
 
 **Why teams call Seedance 2.0 (`seedance-2.0`) through APIMart**
 
@@ -29,7 +29,7 @@ Seedance 2.0 is ByteDance's text-to-video and image-to-video model with cinemati
 
 | Route | `model` value | Billing | Notes |
 | --- | --- | --- | --- |
-| Text-to-video / image-to-video | `seedance-2.0` | per generated second, by resolution | see the [model page](https://go.apimart.ai/k-PENDING-seedance-2.0-api-model) for the exact tiers |
+| Text-to-video / image-to-video | `seedance-2.0` | per generated second, by resolution | see the [model page](https://go.apimart.ai/k-ea65c1) for the exact tiers |
 
 Endpoint: `POST https://api.apimart.ai/v1/videos/generations` (OpenAI-compatible), then poll `GET /v1/tasks/{task_id}`.
 
@@ -43,7 +43,7 @@ Endpoint: `POST https://api.apimart.ai/v1/videos/generations` (OpenAI-compatible
 
 <!-- pricing:model:end -->
 
-Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-seedance-2.0-api-pricing) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
+Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-7fc243) and [`data/model.json`](data/model.json) are refreshed by CI, and a completed task reports the exact amount in its `cost` field.
 
 ## Request parameters
 
@@ -57,7 +57,7 @@ Prices are a snapshot; the [pricing page](https://go.apimart.ai/k-PENDING-seedan
 | `image_urls` | string[] | — | first frame, first + last frame, or style references, where supported |
 | `seed` | integer | — | fix the seed to reproduce a take |
 
-The table lists the fields accepted by the APIMart OpenAI-compatible video endpoint. Check the [model page](https://go.apimart.ai/k-PENDING-seedance-2.0-api-model) for anything this model adds on top.
+The table lists the fields accepted by the APIMart OpenAI-compatible video endpoint. Check the [model page](https://go.apimart.ai/k-ea65c1) for anything this model adds on top.
 
 ## Quickstart
 
@@ -100,15 +100,15 @@ Runnable versions: [`examples/`](examples). The task lifecycle is `pending → p
 
 **How do I get a key?**
 
-Use the [Get an API key](https://go.apimart.ai/k-99a937) link — $1 minimum top-up, no plan required.
+Use the [Get an API key](https://go.apimart.ai/k-12bb08) link — $1 minimum top-up, no plan required.
 
 ## Attributed links (how this repository is measured)
 
 | Purpose | Attributed link | Target |
 | --- | --- | --- |
-| Model page | <https://go.apimart.ai/k-PENDING-seedance-2.0-api-model> | `apimart.ai/model/doubao-seedance-2-0` |
-| Live pricing | <https://go.apimart.ai/k-PENDING-seedance-2.0-api-pricing> | `apimart.ai/pricing` |
-| Get an API key | <https://go.apimart.ai/k-99a937> | `apimart.ai/keys` |
+| Model page | <https://go.apimart.ai/k-ea65c1> | `apimart.ai/model/doubao-seedance-2-0` |
+| Live pricing | <https://go.apimart.ai/k-7fc243> | `apimart.ai/pricing` |
+| Get an API key | <https://go.apimart.ai/k-12bb08> | `apimart.ai/keys` |
 
 Outbound APIMart links are minted through the promo link API; hand-made tracking parameters are rejected by
 `tools/check_links.py` in CI.
